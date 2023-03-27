@@ -27,7 +27,7 @@ func main() {
 		fmt.Println("success read file environment")
 	}
 	
-	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
+	psqlInfo := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
 		os.Getenv("PGHOST"), 
 		os.Getenv("PGPORT"), 
 		os.Getenv("PGUSER"), 
